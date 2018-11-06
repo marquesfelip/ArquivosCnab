@@ -220,5 +220,5 @@ var santanderRemessa400 = {
   </table>
 
   <p class="mt-5">Conteúdo do arquivo sem:</p>
-  <div id="filecontents"></div>`
+  <div id="filecontents" class="border border-secondary rounded p-2"></div>`
 };
