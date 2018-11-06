@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="pt-BR">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:400,400i,700" rel="stylesheet">
+    <!-- Own CSS -->
+    <link rel="stylesheet" href="css/app.css">
+
+    <title>Leitura de Arquivos CNAB</title>
+</head>
+
+<body>
+    <div class="container mt-3">
+
+        <div class="cntr">
+            <span>Selecione o tipo de arquivo a ser lido:</span>
+            <label for="radioRemessa" class="btn-radio">
+                <input id="radioRemessa" type="radio" name="radio-grp" value="1">
+                <svg width="20px" height="20px" viewBox="0 0 20 20">
+                    <circle cx="10" cy="10" r="9"></circle>
+                    <path d="M10,7 C8.34314575,7 7,8.34314575 7,10 C7,11.6568542 8.34314575,13 10,13 C11.6568542,13 13,11.6568542 13,10 C13,8.34314575 11.6568542,7 10,7 Z"
+                        class="inner"></path>
+                    <path d="M10,1 L10,1 L10,1 C14.9705627,1 19,5.02943725 19,10 L19,10 L19,10 C19,14.9705627 14.9705627,19 10,19 L10,19 L10,19 C5.02943725,19 1,14.9705627 1,10 L1,10 L1,10 C1,5.02943725 5.02943725,1 10,1 L10,1 Z"
+                        class="outer"></path>
+                </svg>
+                <span>Remessa</span>
+            </label>
+            <label for="radioRetorno" class="btn-radio">
+                <input id="radioRetorno" type="radio" name="radio-grp" value="2">
+                <svg width="20px" height="20px" viewBox="0 0 20 20">
+                    <circle cx="10" cy="10" r="9"></circle>
+                    <path d="M10,7 C8.34314575,7 7,8.34314575 7,10 C7,11.6568542 8.34314575,13 10,13 C11.6568542,13 13,11.6568542 13,10 C13,8.34314575 11.6568542,7 10,7 Z"
+                        class="inner"></path>
+                    <path d="M10,1 L10,1 L10,1 C14.9705627,1 19,5.02943725 19,10 L19,10 L19,10 C19,14.9705627 14.9705627,19 10,19 L10,19 L10,19 C5.02943725,19 1,14.9705627 1,10 L1,10 L1,10 C1,5.02943725 5.02943725,1 10,1 L10,1 Z"
+                        class="outer"></path>
+                </svg>
+                <span>Retorno</span>
+            </label>
+        </div>
+
+        <div class="input-group mb-2">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="selecionarBanco">Selecione o Banco e número de Posições do arquivo</label>
+            </div>
+            <select id="selecionarBanco" class="custom-select"></select>
+        </div>
+
+        <div id="selecionarArquivo" class="input-group mb-2">
+            <div class="input-group-prepend">
+                <label class="btn btn-outline-secondary" for="arquivoSelecionado">Selecione o arquivo que será lido</label>
+            </div>
+            <div class="custom-file">
+                <input type="file" class="custom-file-input" id="arquivoSelecionado">
+                <label id="labelArquivoSelecionado" class="custom-file-label" for="arquivoSelecionado">...</label>
+            </div>
+        </div>
+
+        <div id="alertas"></div>
+    </div>
+
+    <div class="container-fluid">
+        <div id="configuracoes" class="mt-2"></div>
+        <div id="tabelas"></div>
+    </div>
+
+    <!-- Own JavaScript -->
+    <script src="js/mvc.js"></script>
+    <script src="js/bbremessa400.js"></script>
+    <script src="js/bradescoremessa400.js"></script>
+    <script src="js/itauremessa400.js"></script>
+    <script src="js/santanderremessa400.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="libs/jquery-3.3.1.min.js"></script>
+    <script src="libs/popper.min.js"></script>
+    <script src="libs/bootstrap.min.js"></script>
+</body>
+
+</html>
