@@ -89,7 +89,7 @@ var view = {
           santanderRemessa400.init();
           break;
         case '23':
-          // bradescoRetorno400.init();
+          bradescoRetorno400.init();
           break;
         default:
           break;

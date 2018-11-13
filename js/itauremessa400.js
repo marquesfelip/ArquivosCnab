@@ -218,6 +218,6 @@ var itauRemessa400 = {
         <tbody id="infoTransacao"></tbody>
     </table>
 
-    <p class="mt-5">Conteúdo do arquivo (sem espaçamento múltiplo):</p>
-    <div id="filecontents" class="border border-secondary rounded p-2"></div>`
+    <p class="mt-5">Conteúdo do arquivo (sem espaçamento múltiplo)</p>
+    <div id="filecontents" class="border border-secondary rounded p-2 mb-4"></div>`
 };
