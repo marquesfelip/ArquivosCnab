@@ -27,7 +27,7 @@ var bradescoRetorno400 = {
           ALERTAS.innerHTML = '';
 
           view.renderizarConfiguracoes();
-          view.renderizarTabelas(SELF.tabelasBradescoRemessa400);
+          view.renderizarTabelas(SELF.tabelasBradescoRetorno400);
           view.listenersFinais();
 
           document.getElementById('labelArquivoSelecionado').innerText = ARQUIVO_A_SER_LIDO.name;
@@ -135,7 +135,7 @@ var bradescoRetorno400 = {
     view.lerLinha(controller.getArquivoLido(), controller.getPosicaoInicial(), this);
   },
 
-  tabelasBradescoRemessa400: `<p class="mt-1 mb-1">Registro Header Label</p>
+  tabelasBradescoRetorno400: `<p class="mt-1 mb-1">Registro Header Label</p>
     <table class="table table-dark quebrar-linhas table-responsive" id="tabelaCabecalho">
         <thead>
             <tr>
