@@ -63,15 +63,16 @@ var itauRemessa400 = {
     view.registroCabecalhoPosicoes(arquivoLido, TBODY, TR, 2, 9);
     view.registroCabecalhoPosicoes(arquivoLido, TBODY, TR, 9, 11);
     view.registroCabecalhoPosicoes(arquivoLido, TBODY, TR, 11, 26);
-    view.registroCabecalhoPosicoes(arquivoLido, TBODY, TR, 26, 46);
+    view.registroCabecalhoPosicoes(arquivoLido, TBODY, TR, 26, 30);
+    view.registroCabecalhoPosicoes(arquivoLido, TBODY, TR, 30, 32);
+    view.registroCabecalhoPosicoes(arquivoLido, TBODY, TR, 32, 37);
+    view.registroCabecalhoPosicoes(arquivoLido, TBODY, TR, 37, 38);
+    view.registroCabecalhoPosicoes(arquivoLido, TBODY, TR, 38, 46);
     view.registroCabecalhoPosicoes(arquivoLido, TBODY, TR, 46, 76);
     view.registroCabecalhoPosicoes(arquivoLido, TBODY, TR, 76, 79);
     view.registroCabecalhoPosicoes(arquivoLido, TBODY, TR, 79, 94);
     view.registroCabecalhoPosicoes(arquivoLido, TBODY, TR, 94, 100);
-    view.registroCabecalhoPosicoes(arquivoLido, TBODY, TR, 100, 108);
-    view.registroCabecalhoPosicoes(arquivoLido, TBODY, TR, 108, 110);
-    view.registroCabecalhoPosicoes(arquivoLido, TBODY, TR, 110, 117);
-    view.registroCabecalhoPosicoes(arquivoLido, TBODY, TR, 117, 394);
+    view.registroCabecalhoPosicoes(arquivoLido, TBODY, TR, 100, 394);
     view.registroCabecalhoPosicoes(arquivoLido, TBODY, TR, 394, 400);
   },
 
@@ -95,8 +96,7 @@ var itauRemessa400 = {
     view.registroTransacaoPosicoes(linha, TBODY, TR, 28, 29);
     view.registroTransacaoPosicoes(linha, TBODY, TR, 29, 33);
     view.registroTransacaoPosicoes(linha, TBODY, TR, 33, 37);
-    view.registroTransacaoPosicoes(linha, TBODY, TR, 37, 38);
-    view.registroTransacaoPosicoes(linha, TBODY, TR, 38, 62);
+    view.registroTransacaoPosicoes(linha, TBODY, TR, 37, 62);
     view.registroTransacaoPosicoes(linha, TBODY, TR, 62, 70);
     view.registroTransacaoPosicoes(linha, TBODY, TR, 70, 83);
     view.registroTransacaoPosicoes(linha, TBODY, TR, 83, 86);
@@ -181,7 +181,7 @@ var itauRemessa400 = {
                 <th scope="col">071 a 083 Qtde de moeda</th>
                 <th scope="col">084 a 086 Nº da carteira</th>
                 <th scope="col">087 a 107 Uso do banco</th>
-                <th scope="col">108 a 108 Carteira</th>
+                <th scope="col">108 Carteira</th>
                 <th scope="col">109 a 110 Cód. de ocorrência</th>
                 <th scope="col">111 a 120 Nº do documento</th>
                 <th scope="col">121 a 126 Vencimento</th>

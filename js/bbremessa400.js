@@ -27,7 +27,7 @@ var bbRemessa400 = {
           ALERTAS.innerHTML = '';
 
           view.renderizarConfiguracoes();
-          view.renderizarTabelas(SELF.tabelasBB400);
+          view.renderizarTabelas(SELF.tabelasBBRemessa400);
           view.listenersFinais();
 
           document.getElementById('labelArquivoSelecionado').innerText = ARQUIVO_A_SER_LIDO.name;
@@ -145,7 +145,7 @@ var bbRemessa400 = {
     view.lerLinha(controller.getArquivoLido(), controller.getPosicaoInicial(), this);
   },
 
-  tabelasBB400: `<p class="mt-1 mb-1">Registro Header Label</p>
+  tabelasBBRemessa400: `<p class="mt-1 mb-1">Registro Header Label</p>
     <table class="table table-dark quebrar-linhas table-responsive" id="tabelaCabecalho">
         <thead>
             <tr>

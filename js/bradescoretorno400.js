@@ -42,14 +42,14 @@ var bradescoRetorno400 = {
           const ALERTAS = document.getElementById('alertas');
           ALERTAS.innerHTML = '';
           ALERTAS.innerHTML =
-            `<div class="alert alert-primary" role="alert">O arquivo selecionado não corresponde a remessa do banco Bradesco!</div>`;
+            `<div class="alert alert-primary" role="alert">O arquivo selecionado não corresponde a um arquivo de retorno do banco Bradesco!</div>`;
           return;
         }
       }
     } else {
       const ALERTAS = document.getElementById('alertas');
       ALERTAS.innerHTML = '';
-      ALERTAS.innerHTML = `<div class="alert alert-primary" role="alert">Selecione um arquivo com a extensão 'REM'.</div>`;
+      ALERTAS.innerHTML = `<div class="alert alert-primary" role="alert">Selecione um arquivo com a extensão 'RET'.</div>`;
     }
   },
 
