@@ -54,7 +54,8 @@ var view = {
         // 2 = Retorno
       case 2:
         selecionarBanco.innerHTML = `<option value="nenhum" selected disabled>Selecione o Banco</option>
-            <option value="23">Bradesco 400</option>`;
+            <option value="23">Bradesco 400</option>
+            <option value="27">Itaú 400</option>`;
         break;
       default:
         break;
@@ -90,6 +91,9 @@ var view = {
           break;
         case '23':
           bradescoRetorno400.init();
+          break;
+        case '27':
+          itauRetorno400.init();
           break;
         default:
           break;

@@ -42,7 +42,7 @@ var itauRemessa400 = {
           const ALERTAS = document.getElementById('alertas');
           ALERTAS.innerHTML = '';
           ALERTAS.innerHTML =
-            `<div class="alert alert-primary" role="alert">O arquivo selecionado não corresponde a remessa do banco Itau!</div>`;
+            `<div class="alert alert-primary" role="alert">O arquivo selecionado não corresponde a remessa do banco Itaú!</div>`;
           return;
         }
       }
