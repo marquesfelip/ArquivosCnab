@@ -21,7 +21,7 @@ var bbRemessa400 = {
 
       FILE_READER.onload = function () {
         // Banco selecionado condiz com o banco do arquivo selecionado
-        if (FILE_READER.result.slice(76, 94) === '001BANCODOBRASIL  ') {
+        if (FILE_READER.result.slice(76, 94) === '001BANCO DO BRASIL') {
 
           const ALERTAS = document.getElementById('alertas');
           ALERTAS.innerHTML = '';
@@ -81,7 +81,7 @@ var bbRemessa400 = {
 
   verificarLinha(linha) {
     'use strict';
-    if (linha[0] === '1')
+    if (linha[0] === '7')
       this.registroTransacao(linha);
   },
 
