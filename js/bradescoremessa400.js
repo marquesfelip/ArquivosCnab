@@ -138,80 +138,80 @@ var bradescoRemessa400 = {
 
   tabelasBradescoRemessa400: `<p class="mt-1 mb-1">Registro Header Label</p>
     <table class="table table-dark quebrar-linhas table-responsive" id="tabelaCabecalho">
-        <thead>
-            <tr>
-                <th scope="col">001 Identificação do Registro</th>
-                <th scope="col">002 Identificação do Arquivo Remessa</th>
-                <th scope="col">003 a 009 Literal REMESSA</th>
-                <th scope="col">010 a 011 Código de Serviço</th>
-                <th scope="col">012 a 026 Literal COBRANÇA</th>
-                <th scope="col">027 a 046 Código da Empresa</th>
-                <th scope="col">047 a 076 Nome da Empresa</th>
-                <th scope="col">077 a 079 Número do Bradesco na Câmara de Compensação</th>
-                <th scope="col">080 a 094 Nome do Banco por Extenso</th>
-                <th scope="col">095 a 100 Data da Gravação do Arquivo</th>
-                <th scope="col">101 a 108 (BRANCO)</th>
-                <th scope="col">109 a 110 Identificação do sistema</th>
-                <th scope="col">111 a 117 Nº Seqüencial de Remessa</th>
-                <th scope="col">118 a 394 (BRANCO)</th>
-                <th scope="col">395 a 400 Nº Seqüencial do Registro de Um em Um</th>
-            </tr>
-        </thead>
-        <tbody id="infoCabecalho"></tbody>
+      <thead>
+        <tr>
+          <th scope="col">001 Identificação do Registro</th>
+          <th scope="col">002 Identificação do Arquivo Remessa</th>
+          <th scope="col">003 a 009 Literal REMESSA</th>
+          <th scope="col">010 a 011 Código de Serviço</th>
+          <th scope="col">012 a 026 Literal COBRANÇA</th>
+          <th scope="col">027 a 046 Código da Empresa</th>
+          <th scope="col">047 a 076 Nome da Empresa</th>
+          <th scope="col">077 a 079 Número do Bradesco na Câmara de Compensação</th>
+          <th scope="col">080 a 094 Nome do Banco por Extenso</th>
+          <th scope="col">095 a 100 Data da Gravação do Arquivo</th>
+          <th scope="col">101 a 108 (BRANCO)</th>
+          <th scope="col">109 a 110 Identificação do sistema</th>
+          <th scope="col">111 a 117 Nº Seqüencial de Remessa</th>
+          <th scope="col">118 a 394 (BRANCO)</th>
+          <th scope="col">395 a 400 Nº Seqüencial do Registro de Um em Um</th>
+        </tr>
+      </thead>
+      <tbody id="infoCabecalho"></tbody>
     </table>
 
     <p class="mb-1">Registro de Transação - Tipo 1</p>
     <table class="table table-dark quebrar-linhas table-responsive" id="tabelaTransacao">
-        <thead>
-            <tr>
-                <th scope="col">001 Identificação do Registro</th>
-                <th scope="col">002 a 006 Agência de Débito (opcional)</th>
-                <th scope="col">007 Dígito da Agência de Débito (opcional)</th>
-                <th scope="col">008 a 012 Razão da Conta Corrente (opcional)</th>
-                <th scope="col">013 a 019 Conta Corrente (opcional)</th>
-                <th scope="col">020 Dígito da Conta Corrente (opcional)</th>
-                <th scope="col">021 a 037 Identificação da Empresa Beneficiária no Banco</th>
-                <th scope="col">038 a 062 Nº Controle do Participante</th>
-                <th scope="col">063 a 065 Código do Banco a ser debitado na Câmara de Compensação</th>
-                <th scope="col">066 Campo de Multa</th>
-                <th scope="col">067 a 070 Percentual de multa</th>
-                <th scope="col">071 a 081 Identificação do Título no Banco</th>
-                <th scope="col">082 Digito de Auto Conferencia do Número Bancário</th>
-                <th scope="col">083 a 092 Desconto Bonificação por dia</th>
-                <th scope="col">093 Condição para Emissão da Papeleta de Cobrança</th>
-                <th scope="col">094 Ident. se emite Boleto para Débito Automático</th>
-                <th scope="col">095 a 104 Identificação da Operação do Banco</th>
-                <th scope="col">105 Indicador Rateio Crédito (opcional)</th>
-                <th scope="col">106 Endereçamento para Aviso do Débito Automático em Conta Corrente (opcional)</th>
-                <th scope="col">107 a 108 Quantidade possíveis de pagamento</th>
-                <th scope="col">109 a 110 Identificação da ocorrência</th>
-                <th scope="col">111 a 120 Nº do Documento</th>
-                <th scope="col">121 a 126 Data do Vencimento do Título</th>
-                <th scope="col">127 a 139 Valor do Título</th>
-                <th scope="col">140 a 142 Banco Encarregado da Cobrança</th>
-                <th scope="col">143 a 147 Agência Depositária</th>
-                <th scope="col">148 a 149 Espécie de Título</th>
-                <th scope="col">150 Identificação</th>
-                <th scope="col">151 a 156 Data da emissão do Título</th>
-                <th scope="col">157 a 158 1ª instrução</th>
-                <th scope="col">159 a 160 2ª instrução</th>
-                <th scope="col">161 a 173 Valor a ser cobrado por Dia de Atraso</th>
-                <th scope="col">174 a 179 Data Limite P/Concessão de Desconto</th>
-                <th scope="col">180 a 192 Valor do Desconto</th>
-                <th scope="col">193 a 205 Valor do IOF</th>
-                <th scope="col">206 a 218 Valor do Abatimento a ser concedido ou cancelado</th>
-                <th scope="col">219 a 220 Identificação do Tipo de Inscrição do Pagador</th>
-                <th scope="col">221 a 234 Nº Inscrição do Pagador</th>
-                <th scope="col">235 a 274 Nome do Pagador</th>
-                <th scope="col">275 a 314 Endereço Completo</th>
-                <th scope="col">315 a 326 1ª Mensagem</th>
-                <th scope="col">327 a 331 CEP</th>
-                <th scope="col">332 a 334 Sufixo do CEP</th>
-                <th scope="col">335 a 394 Sacador/Avalista ou 2ª Mensagem</th>
-                <th scope="col">395 a 400 Nº Seqüencial do Registro</th>
-            </tr>
-        </thead>
-        <tbody id="infoTransacao"></tbody>
+      <thead>
+        <tr>
+          <th scope="col">001 Identificação do Registro</th>
+          <th scope="col">002 a 006 Agência de Débito (opcional)</th>
+          <th scope="col">007 Dígito da Agência de Débito (opcional)</th>
+          <th scope="col">008 a 012 Razão da Conta Corrente (opcional)</th>
+          <th scope="col">013 a 019 Conta Corrente (opcional)</th>
+          <th scope="col">020 Dígito da Conta Corrente (opcional)</th>
+          <th scope="col">021 a 037 Identificação da Empresa Beneficiária no Banco</th>
+          <th scope="col">038 a 062 Nº Controle do Participante</th>
+          <th scope="col">063 a 065 Código do Banco a ser debitado na Câmara de Compensação</th>
+          <th scope="col">066 Campo de Multa</th>
+          <th scope="col">067 a 070 Percentual de multa</th>
+          <th scope="col">071 a 081 Identificação do Título no Banco</th>
+          <th scope="col">082 Digito de Auto Conferencia do Número Bancário</th>
+          <th scope="col">083 a 092 Desconto Bonificação por dia</th>
+          <th scope="col">093 Condição para Emissão da Papeleta de Cobrança</th>
+          <th scope="col">094 Ident. se emite Boleto para Débito Automático</th>
+          <th scope="col">095 a 104 Identificação da Operação do Banco</th>
+          <th scope="col">105 Indicador Rateio Crédito (opcional)</th>
+          <th scope="col">106 Endereçamento para Aviso do Débito Automático em Conta Corrente (opcional)</th>
+          <th scope="col">107 a 108 Quantidade possíveis de pagamento</th>
+          <th scope="col">109 a 110 Identificação da ocorrência</th>
+          <th scope="col">111 a 120 Nº do Documento</th>
+          <th scope="col">121 a 126 Data do Vencimento do Título</th>
+          <th scope="col">127 a 139 Valor do Título</th>
+          <th scope="col">140 a 142 Banco Encarregado da Cobrança</th>
+          <th scope="col">143 a 147 Agência Depositária</th>
+          <th scope="col">148 a 149 Espécie de Título</th>
+          <th scope="col">150 Identificação</th>
+          <th scope="col">151 a 156 Data da emissão do Título</th>
+          <th scope="col">157 a 158 1ª instrução</th>
+          <th scope="col">159 a 160 2ª instrução</th>
+          <th scope="col">161 a 173 Valor a ser cobrado por Dia de Atraso</th>
+          <th scope="col">174 a 179 Data Limite P/Concessão de Desconto</th>
+          <th scope="col">180 a 192 Valor do Desconto</th>
+          <th scope="col">193 a 205 Valor do IOF</th>
+          <th scope="col">206 a 218 Valor do Abatimento a ser concedido ou cancelado</th>
+          <th scope="col">219 a 220 Identificação do Tipo de Inscrição do Pagador</th>
+          <th scope="col">221 a 234 Nº Inscrição do Pagador</th>
+          <th scope="col">235 a 274 Nome do Pagador</th>
+          <th scope="col">275 a 314 Endereço Completo</th>
+          <th scope="col">315 a 326 1ª Mensagem</th>
+          <th scope="col">327 a 331 CEP</th>
+          <th scope="col">332 a 334 Sufixo do CEP</th>
+          <th scope="col">335 a 394 Sacador/Avalista ou 2ª Mensagem</th>
+          <th scope="col">395 a 400 Nº Seqüencial do Registro</th>
+        </tr>
+      </thead>
+      <tbody id="infoTransacao"></tbody>
     </table>
 
     <p class="mt-5">Conteúdo do arquivo (sem espaçamento múltiplo)</p>

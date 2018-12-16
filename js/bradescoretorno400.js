@@ -137,79 +137,79 @@ var bradescoRetorno400 = {
 
   tabelasBradescoRetorno400: `<p class="mt-1 mb-1">Registro Header Label</p>
     <table class="table table-dark quebrar-linhas table-responsive" id="tabelaCabecalho">
-        <thead>
-            <tr>
-                <th scope="col">001 Identificação do Registro</th>
-                <th scope="col">002 Identificação do Arquivo Retorno</th>
-                <th scope="col">003 a 009 Literal RETORNO</th>
-                <th scope="col">010 a 011 Código de Serviço</th>
-                <th scope="col">012 a 026 Literal COBRANÇA</th>
-                <th scope="col">027 a 046 Código da Empresa</th>
-                <th scope="col">047 a 076 Nome da Empresa por extenso</th>
-                <th scope="col">077 a 079 Número do Bradesco na Câmara de Compensação</th>
-                <th scope="col">080 a 094 Nome do Banco por Extenso</th>
-                <th scope="col">095 a 100 Data da Gravação do Arquivo</th>
-                <th scope="col">101 a 108 Densidade de Gravação</th>
-                <th scope="col">109 a 113 Nº Aviso Bancário</th>
-                <th scope="col">114 a 379 (BRANCO)</th>
-                <th scope="col">380 a 385 Data do Crédito</th>
-                <th scope="col">386 a 394 (BRANCO)</th>
-                <th scope="col">395 a 400 Nº Sequencial de registro</th>
-            </tr>
-        </thead>
-        <tbody id="infoCabecalho"></tbody>
+      <thead>
+        <tr>
+          <th scope="col">001 Identificação do Registro</th>
+          <th scope="col">002 Identificação do Arquivo Retorno</th>
+          <th scope="col">003 a 009 Literal RETORNO</th>
+          <th scope="col">010 a 011 Código de Serviço</th>
+          <th scope="col">012 a 026 Literal COBRANÇA</th>
+          <th scope="col">027 a 046 Código da Empresa</th>
+          <th scope="col">047 a 076 Nome da Empresa por extenso</th>
+          <th scope="col">077 a 079 Número do Bradesco na Câmara de Compensação</th>
+          <th scope="col">080 a 094 Nome do Banco por Extenso</th>
+          <th scope="col">095 a 100 Data da Gravação do Arquivo</th>
+          <th scope="col">101 a 108 Densidade de Gravação</th>
+          <th scope="col">109 a 113 Nº Aviso Bancário</th>
+          <th scope="col">114 a 379 (BRANCO)</th>
+          <th scope="col">380 a 385 Data do Crédito</th>
+          <th scope="col">386 a 394 (BRANCO)</th>
+          <th scope="col">395 a 400 Nº Sequencial de registro</th>
+        </tr>
+      </thead>
+      <tbody id="infoCabecalho"></tbody>
     </table>
 
     <p class="mb-1">Registro de Transação - Tipo 1</p>
     <table class="table table-dark quebrar-linhas table-responsive" id="tabelaTransacao">
-        <thead>
-            <tr>
-                <th scope="col">001 Identificação do Registro</th>
-                <th scope="col">002 a 003 Tipo de Inscrição Empresa</th>
-                <th scope="col">004 a 017 Nº Inscrição da Empresa</th>
-                <th scope="col">018 a 020 Zeros</th>
-                <th scope="col">021 a 037 Identificação da Empresa Benef. no Banco</th>
-                <th scope="col">038 a 062 Nº Controle do Participante</th>
-                <th scope="col">063 a 070 Zeros</th>
-                <th scope="col">071 a 082 Identificação do Título no Banco</th>
-                <th scope="col">083 a 092 Zeros</th>
-                <th scope="col">093 a 104 Zeros</th>
-                <th scope="col">105 Indicador de Rateio Crédito</th>
-                <th scope="col">106 a 107 Pagamento parcial</th>
-                <th scope="col">108 Carteira </th>
-                <th scope="col">109 a 110 Identificação de Ocorrência </th>
-                <th scope="col">111 a 116 Data Ocorrência no Banco</th>
-                <th scope="col">117 a 126 Número do Documento </th>
-                <th scope="col">127 a 146 Identificação do Título no Banco </th>
-                <th scope="col">147 a 152 Data Vencimento do Título</th>
-                <th scope="col">153 a 165 Valor do Título</th>
-                <th scope="col">166 a 168 Banco Cobrador</th>
-                <th scope="col">169 a 173 Agência Cobradora</th>
-                <th scope="col">174 a 175 Espécie do Título (BRANCO)</th>
-                <th scope="col">176 a 188 Despesas de cobrança para os Cod. de Ocorrência</th>
-                <th scope="col">189 a 201 Outras despesas / Custas de Protesto </th>
-                <th scope="col">202 a 214 Juros Operação em Atraso</th>
-                <th scope="col">215 a 227 IOF Devido</th>
-                <th scope="col">228 a 240 Abatimento Concedido sobre o Título </th>
-                <th scope="col">241 a 253 Desconto Concedido </th>
-                <th scope="col">254 a 266 Valor Pago</th>
-                <th scope="col">267 a 279 Juros de Mora</th>
-                <th scope="col">280 a 292 Outros Créditos </th>
-                <th scope="col">293 a 294 (BRANCOS)</th>
-                <th scope="col">295 Motivo do Código de Ocorrência</th>
-                <th scope="col">296 a 301 Data do Crédito</th>
-                <th scope="col">302 a 304 Origem Pagamento </th>
-                <th scope="col">305 a 314 (BRANCOS)</th>
-                <th scope="col">315 a 318 Quando cheque Bradesco informe 0237</th>
-                <th scope="col">319 a 328 Motivos das Rejei. para os Cod. de Ocorrência da Pos. 109-110</th>
-                <th scope="col">329 a 368 (BRANCOS)</th>
-                <th scope="col">369 a 370 Número do Cartório</th>
-                <th scope="col">371 a 380 Número do Protocolo</th>
-                <th scope="col">381 a 394 (BRANCOS)</th>
-                <th scope="col">395 a 400 Nº Seqüencial de Registro</th>
-            </tr>
-        </thead>
-        <tbody id="infoTransacao"></tbody>
+      <thead>
+        <tr>
+          <th scope="col">001 Identificação do Registro</th>
+          <th scope="col">002 a 003 Tipo de Inscrição Empresa</th>
+          <th scope="col">004 a 017 Nº Inscrição da Empresa</th>
+          <th scope="col">018 a 020 Zeros</th>
+          <th scope="col">021 a 037 Identificação da Empresa Benef. no Banco</th>
+          <th scope="col">038 a 062 Nº Controle do Participante</th>
+          <th scope="col">063 a 070 Zeros</th>
+          <th scope="col">071 a 082 Identificação do Título no Banco</th>
+          <th scope="col">083 a 092 Zeros</th>
+          <th scope="col">093 a 104 Zeros</th>
+          <th scope="col">105 Indicador de Rateio Crédito</th>
+          <th scope="col">106 a 107 Pagamento parcial</th>
+          <th scope="col">108 Carteira </th>
+          <th scope="col">109 a 110 Identificação de Ocorrência </th>
+          <th scope="col">111 a 116 Data Ocorrência no Banco</th>
+          <th scope="col">117 a 126 Número do Documento </th>
+          <th scope="col">127 a 146 Identificação do Título no Banco </th>
+          <th scope="col">147 a 152 Data Vencimento do Título</th>
+          <th scope="col">153 a 165 Valor do Título</th>
+          <th scope="col">166 a 168 Banco Cobrador</th>
+          <th scope="col">169 a 173 Agência Cobradora</th>
+          <th scope="col">174 a 175 Espécie do Título (BRANCO)</th>
+          <th scope="col">176 a 188 Despesas de cobrança para os Cod. de Ocorrência</th>
+          <th scope="col">189 a 201 Outras despesas / Custas de Protesto </th>
+          <th scope="col">202 a 214 Juros Operação em Atraso</th>
+          <th scope="col">215 a 227 IOF Devido</th>
+          <th scope="col">228 a 240 Abatimento Concedido sobre o Título </th>
+          <th scope="col">241 a 253 Desconto Concedido </th>
+          <th scope="col">254 a 266 Valor Pago</th>
+          <th scope="col">267 a 279 Juros de Mora</th>
+          <th scope="col">280 a 292 Outros Créditos </th>
+          <th scope="col">293 a 294 (BRANCOS)</th>
+          <th scope="col">295 Motivo do Código de Ocorrência</th>
+          <th scope="col">296 a 301 Data do Crédito</th>
+          <th scope="col">302 a 304 Origem Pagamento </th>
+          <th scope="col">305 a 314 (BRANCOS)</th>
+          <th scope="col">315 a 318 Quando cheque Bradesco informe 0237</th>
+          <th scope="col">319 a 328 Motivos das Rejei. para os Cod. de Ocorrência da Pos. 109-110</th>
+          <th scope="col">329 a 368 (BRANCOS)</th>
+          <th scope="col">369 a 370 Número do Cartório</th>
+          <th scope="col">371 a 380 Número do Protocolo</th>
+          <th scope="col">381 a 394 (BRANCOS)</th>
+          <th scope="col">395 a 400 Nº Seqüencial de Registro</th>
+        </tr>
+      </thead>
+      <tbody id="infoTransacao"></tbody>
     </table>
 
     <p class="mt-5">Conteúdo do arquivo (sem espaçamento múltiplo)</p>

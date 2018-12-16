@@ -140,83 +140,83 @@ var santanderRemessa400 = {
 
   tabelasSantanderRemessa400: `<p class="mt-1 mb-1">Registro Header Label</p>
     <table class="table table-dark quebrar-linhas table-responsive" id="tabelaCabecalho">
-        <thead>
-            <tr>
-                <th scope="col">001 Código do registro = 0</th>
-                <th scope="col">002 Código da remessa = 1</th>
-                <th scope="col">003 a 009 Literal de transmissão = REMESSA</th>
-                <th scope="col">010 a 011 Código do serviço = 01</th>
-                <th scope="col">012 a 026 Literal de serviço = COBRANÇA</th>
-                <th scope="col">027 a 046 Código de Transmissão (nota 1)</th>
-                <th scope="col">047 a 076 Nome do cedente</th>
-                <th scope="col">077 a 079 Código do Banco = 033</th>
-                <th scope="col">080 a 094 Nome do Banco = SANTANDER</th>
-                <th scope="col">095 a 100 Data de Gravação</th>
-                <th scope="col">101 a 116 Zeros</th>
-                <th scope="col">117 a 391 Brancos</th>
-                <th scope="col">392 a 394 Número da versão da remessa</th>
-                <th scope="col">395 a 400 Número sequencial do registro</th>
-            </tr>
-        </thead>
-        <tbody id="infoCabecalho"></tbody>
+      <thead>
+        <tr>
+          <th scope="col">001 Código do registro = 0</th>
+          <th scope="col">002 Código da remessa = 1</th>
+          <th scope="col">003 a 009 Literal de transmissão = REMESSA</th>
+          <th scope="col">010 a 011 Código do serviço = 01</th>
+          <th scope="col">012 a 026 Literal de serviço = COBRANÇA</th>
+          <th scope="col">027 a 046 Código de Transmissão (nota 1)</th>
+          <th scope="col">047 a 076 Nome do cedente</th>
+          <th scope="col">077 a 079 Código do Banco = 033</th>
+          <th scope="col">080 a 094 Nome do Banco = SANTANDER</th>
+          <th scope="col">095 a 100 Data de Gravação</th>
+          <th scope="col">101 a 116 Zeros</th>
+          <th scope="col">117 a 391 Brancos</th>
+          <th scope="col">392 a 394 Número da versão da remessa</th>
+          <th scope="col">395 a 400 Número sequencial do registro</th>
+        </tr>
+      </thead>
+      <tbody id="infoCabecalho"></tbody>
     </table>
 
     <p class="mb-1">Registro de Transação - Tipo 1</p>
     <table class="table table-dark quebrar-linhas table-responsive" id="tabelaTransacao">
-        <thead>
-            <tr>
-                <th scope="col">001 Código do registro = 1</th>
-                <th scope="col">002 a 003 Tipo de inscrição do cedente</th>
-                <th scope="col">004 a 17 CGC ou CPF do cedente</th>
-                <th scope="col">018 a 037 Código de Transmissão</th>
-                <th scope="col">038 a 062 Número de controle do participante, para controle por parte
-                do cedente</th>
-                <th scope="col">063 a 070 Nosso número</th>
-                <th scope="col">071 a 076 Data do segundo desconto</th>
-                <th scope="col">077 a 077 Branco</th>
-                <th scope="col">078 a 078 Informação de multa = 4, senão houver informar zero</th>
-                <th scope="col">079 a 082 Percentual multa por atraso %</th>
-                <th scope="col">083 a 084 Unidade de valor moeda corrente = 00</th>
-                <th scope="col">085 a 097 Valor do título em outra unidade (consultar banco)</th>
-                <th scope="col">098 a 101 Brancos</th>
-                <th scope="col">102 a 107 Data para cobrança de multa</th>
-                <th scope="col">108 Código da carteira</th>
-                <th scope="col">109 a 110 Código da ocorrência</th>
-                <th scope="col">111 a 120 Seu número</th>
-                <th scope="col">121 a 126 Data de vencimento do título</th>
-                <th scope="col">127 a 139 Valor do título - moeda corrente</th>
-                <th scope="col">140 a 142 Número do banco cobrador = 033</th>
-                <th scope="col">143 a 147 Código da agência cobradora do Banco Santander</th>
-                <th scope="col">148 a 149 Espécie de documento</th>
-                <th scope="col">150 Tipo de aceite = N</th>
-                <th scope="col">151 a 156 Data da emissão do título</th>
-                <th scope="col">157 a 158 Primeira instrução cobrança</th>
-                <th scope="col">159 a 160 Segunda instrução cobrança</th>
-                <th scope="col">161 a 173 Valor de mora a ser cobrado por dia de atraso</th>
-                <th scope="col">174 a 179 Data limite para concessão de desconto</th>
-                <th scope="col">180 a 192 Valor de desconto a ser concedido</th>
-                <th scope="col">193 a 205 Valor do IOF a ser recolhido pelo Banco para nota de seguro</th>
-                <th scope="col">206 a 218 Valor do abatimento a ser concedido ou valor do segundo desc. Vide posição 71</th>
-                <th scope="col">219 a 220 Tipo de inscrição do sacado</th>
-                <th scope="col">221 a 234 CGC ou CPF do sacado</th>
-                <th scope="col">235 a 274 Nome do sacado</th>
-                <th scope="col">275 a 314 Endereço do sacado</th>
-                <th scope="col">315 a 326 Bairro do sacado</th>
-                <th scope="col">327 a 331 CEP do sacado</th>
-                <th scope="col">332 a 334 Complemento do CEP</th>
-                <th scope="col">335 e 349 Município do sacado</th>
-                <th scope="col">350 a 351 UF do sacado</th>
-                <th scope="col">352 a 381 Nome do sacado ou coobrigado</th>
-                <th scope="col">382 Branco</th>
-                <th scope="col">383 Identificado do Complemento (i maiúsculo - vide nota 2)</th>
-                <th scope="col">384 a 385 Complemento (nota 2)</th>
-                <th scope="col">386 a 391 Brancos</th>
-                <th scope="col">392 a 393 Número de dias para protesto. Quando posições 157/158 ou 159/160 for igual a 06.</th>
-                <th scope="col">394 Branco</th>
-                <th scope="col">395 a 400 Número sequencial do registro no arquivo</th>
-            </tr>
-        </thead>
-        <tbody id="infoTransacao"></tbody>
+      <thead>
+        <tr>
+          <th scope="col">001 Código do registro = 1</th>
+          <th scope="col">002 a 003 Tipo de inscrição do cedente</th>
+          <th scope="col">004 a 17 CGC ou CPF do cedente</th>
+          <th scope="col">018 a 037 Código de Transmissão</th>
+          <th scope="col">038 a 062 Número de controle do participante, para controle por parte
+          do cedente</th>
+          <th scope="col">063 a 070 Nosso número</th>
+          <th scope="col">071 a 076 Data do segundo desconto</th>
+          <th scope="col">077 a 077 Branco</th>
+          <th scope="col">078 a 078 Informação de multa = 4, senão houver informar zero</th>
+          <th scope="col">079 a 082 Percentual multa por atraso %</th>
+          <th scope="col">083 a 084 Unidade de valor moeda corrente = 00</th>
+          <th scope="col">085 a 097 Valor do título em outra unidade (consultar banco)</th>
+          <th scope="col">098 a 101 Brancos</th>
+          <th scope="col">102 a 107 Data para cobrança de multa</th>
+          <th scope="col">108 Código da carteira</th>
+          <th scope="col">109 a 110 Código da ocorrência</th>
+          <th scope="col">111 a 120 Seu número</th>
+          <th scope="col">121 a 126 Data de vencimento do título</th>
+          <th scope="col">127 a 139 Valor do título - moeda corrente</th>
+          <th scope="col">140 a 142 Número do banco cobrador = 033</th>
+          <th scope="col">143 a 147 Código da agência cobradora do Banco Santander</th>
+          <th scope="col">148 a 149 Espécie de documento</th>
+          <th scope="col">150 Tipo de aceite = N</th>
+          <th scope="col">151 a 156 Data da emissão do título</th>
+          <th scope="col">157 a 158 Primeira instrução cobrança</th>
+          <th scope="col">159 a 160 Segunda instrução cobrança</th>
+          <th scope="col">161 a 173 Valor de mora a ser cobrado por dia de atraso</th>
+          <th scope="col">174 a 179 Data limite para concessão de desconto</th>
+          <th scope="col">180 a 192 Valor de desconto a ser concedido</th>
+          <th scope="col">193 a 205 Valor do IOF a ser recolhido pelo Banco para nota de seguro</th>
+          <th scope="col">206 a 218 Valor do abatimento a ser concedido ou valor do segundo desc. Vide posição 71</th>
+          <th scope="col">219 a 220 Tipo de inscrição do sacado</th>
+          <th scope="col">221 a 234 CGC ou CPF do sacado</th>
+          <th scope="col">235 a 274 Nome do sacado</th>
+          <th scope="col">275 a 314 Endereço do sacado</th>
+          <th scope="col">315 a 326 Bairro do sacado</th>
+          <th scope="col">327 a 331 CEP do sacado</th>
+          <th scope="col">332 a 334 Complemento do CEP</th>
+          <th scope="col">335 e 349 Município do sacado</th>
+          <th scope="col">350 a 351 UF do sacado</th>
+          <th scope="col">352 a 381 Nome do sacado ou coobrigado</th>
+          <th scope="col">382 Branco</th>
+          <th scope="col">383 Identificado do Complemento (i maiúsculo - vide nota 2)</th>
+          <th scope="col">384 a 385 Complemento (nota 2)</th>
+          <th scope="col">386 a 391 Brancos</th>
+          <th scope="col">392 a 393 Número de dias para protesto. Quando posições 157/158 ou 159/160 for igual a 06.</th>
+          <th scope="col">394 Branco</th>
+          <th scope="col">395 a 400 Número sequencial do registro no arquivo</th>
+        </tr>
+      </thead>
+      <tbody id="infoTransacao"></tbody>
     </table>
 
     <p class="mt-5">Conteúdo do arquivo (sem espaçamento múltiplo)</p>
