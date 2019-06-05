@@ -11,7 +11,8 @@ var santanderRetorno400 = {
     const ARQUIVO_A_SER_LIDO = document.getElementById('arquivoSelecionado').files[0];
 
     // Checagem da extensão do arquivo
-    if (ARQUIVO_A_SER_LIDO.name.length > 4 && (ARQUIVO_A_SER_LIDO.name.substr(-4) === '.RET' || ARQUIVO_A_SER_LIDO.name.substr(-4) === '.ret')) {
+    if (ARQUIVO_A_SER_LIDO.name.length > 4 && (ARQUIVO_A_SER_LIDO.name.substr(-4) === '.RET'
+                                              || ARQUIVO_A_SER_LIDO.name.substr(-4) === '.ret')) {
 
       // Instância de FileReader
       const FILE_READER = new FileReader();
