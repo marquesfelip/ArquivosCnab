@@ -59,7 +59,8 @@ var view = {
             <option value="21">Banco do Brasil 400</option>
             <option value="23">Bradesco 400</option>
             <option value="27">Itaú 400</option>
-            <option value="29">Santander 400</option>`;
+            <option value="29">Santander 400</option>
+            <option value="31">Sicredi 400</option>`;
         break;
 
       default:
@@ -95,8 +96,8 @@ var view = {
           santanderRemessa400.init();
           break;
         case '11':
-            sicrediRemessa400.init();
-            break;
+          sicrediRemessa400.init();
+          break;
         case '21':
           bbRetorno400.init();
           break;
