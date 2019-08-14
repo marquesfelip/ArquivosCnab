@@ -21,7 +21,7 @@ var sicrediRemessa400 = {
 
       FILE_READER.onload = function () {
         // Banco selecionado condiz com o banco do arquivo selecionado
-        if (FILE_READER.result.slice(79, 94) === 'SICREDI       ') {
+        if (FILE_READER.result.slice(79, 94) === 'SICREDI        ') {
 
           const ALERTAS = document.getElementById('alertas');
           ALERTAS.innerHTML = '';
@@ -182,7 +182,7 @@ var sicrediRemessa400 = {
           <th scope="col">020 a 047 Filler (brancos)</th>
           <th scope="col">048 a 056 Nosso número Sicredi</th>
           <th scope="col">057 a 062 Filler (brancos)</th>
-          <th scope="col">063 a 070 Data da instrução></th>
+          <th scope="col">063 a 070 Data da instrução</th>
           <th scope="col">071 Campo alterado, quando instrução "31"</th>
           <th scope="col">072 Postagem do título</th>
           <th scope="col">073 Filler (branco)</th>
